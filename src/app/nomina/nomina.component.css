@@ -1,0 +1,37 @@
+#titulo{
+  display: flex;
+  justify-content: center;
+  text-align:center;
+  padding: 20px;
+  color: white;
+}
+#div-tabla{
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+ .borde-tabla td{
+   border: 2px solid white;
+   border-radius: 4px;
+   padding: 10px;
+   color: white;
+ }
+
+ .borde-tabla td:hover{
+   background-color: rgb(77, 75, 75);
+}
+
+
+.div-labels{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  color: white;
+}
+ .salario{
+  display: none;
+}
+ .salario-visible{
+   display: block;
+ }
+

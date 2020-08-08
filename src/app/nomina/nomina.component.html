@@ -1,0 +1,29 @@
+<h2 id="titulo">Nomina</h2>
+<div id="div-tabla">
+  <table id="" class="borde-tabla">
+    <tr >
+      <td>
+        Usuario
+      </td>
+      <td *ngFor="let dias of numbers">
+        {{dias}}
+      </td>
+    </tr>
+    <tr >
+      <td>
+        {{correo}}
+      </td>
+      <td *ngFor="let horas of arrayHoras">
+        {{horas}}
+      </td>
+    </tr>
+  </table>
+
+</div >
+<div class="div-labels">
+  <label id="label-total" style="cursor: pointer;" (mouseover)="mostarSalario()" (mouseleave)="mostarSalario()">Total: ${{totalHoras | number}}</label>
+</div>
+<div class="div-labels">
+  <label id="label-salario"  class="salario" id="label-salario" [ngClass]="{'salario-visible': isMouseOver }" >Salario: ${{salario  | number}}</label>
+</div>
+

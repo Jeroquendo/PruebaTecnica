@@ -1,0 +1,27 @@
+<h2 id="titulo-bienvenida"> Bienvenido </h2>
+
+<div class="contenedor" >
+    <div class="row">
+      <form #loginForm = "ngForm" (ngSubmit)= "onSubmit(loginForm)">
+        <h4 id="titulo-ingresar">Ingresar</h4>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+              <span class="input-group-text"><i class="icon-user"></i></span>
+          </div>
+          <input type="text" name="usuario" #name ="ngModel" [(ngModel)]="user.email" placeholder="Email" required/>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+              <span class="input-group-text"><i class="icon-lock"></i></span>
+          </div>
+          <input type="password" name="password" #name ="ngModel" [(ngModel)]="user.password" placeholder="password" required/>
+        </div>
+        <hr style="border-top: 1px solid #eee;">
+        <div class="div-boton">
+            <div class="col-6">
+                <input type="submit" class="btn btn-light px-3"  value="Entrar" />
+            </div>
+        </div>
+      </form>
+    </div>
+</div>
